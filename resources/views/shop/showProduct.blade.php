@@ -21,7 +21,7 @@
         <section>
             <div class="product-info">
                 <div class="product-info__col product-col__slider">
-                        @if ($productItemImages!='')
+                        @if (($productItemImages!='') OR ($productData->images!=''))
                         <div class="fotorama" data-nav="thumbs" data-fit="contain" data-allowfullscreen="true">
 
                                 <a data-fancybox="gallery-0" href="{{ $productData->images }}"><img src="{{ $productData->images }}"></a>
