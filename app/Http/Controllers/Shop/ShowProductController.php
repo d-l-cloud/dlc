@@ -18,7 +18,7 @@ class ShowProductController extends Controller
         $productData->views = $productData->views+1;
         $productData->save();
         $productPropertyList = ProductPropertyList::with("propertyName")->where("productId", $productData->id)->get();
-        $productVariable = ProductList::where("parentArticle", $productData->parentArticle)->where("article",'!=', $productData->article)->get();
+        $productVariable = ProductList::where("parentArticle", $productData->parentArticle)->where("article",'!=', $productData->article)->where("isHidden",'=', 0)->get();
         $getSubCategoryUrl = ProductCategory::where('id', '=', $productData->productCategoryId)->where('parent_id', '!=', '0')->first();
 
         if ($getSubCategoryUrl->parent_id!=0) {
