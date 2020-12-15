@@ -1882,12 +1882,22 @@ textarea {
     position: relative;
     margin-top: 10px;
 }
-@media (max-width: 1200px) {
+@media (min-width: 300px) and (max-width: 600px) {
     .cloud-phone {
         display: flex;
         color: #4F4F4F;
         cursor: pointer;
-        font-size: 16px;
+        font-size: 25px;
+        font-weight: bold;
+
+    }
+}
+@media (min-width: 601px) AND (max-width: 1199px){
+    .cloud-phone {
+        display: flex;
+        color: #4F4F4F;
+        cursor: pointer;
+        font-size: 12px;
         font-weight: bold;
 
     }
