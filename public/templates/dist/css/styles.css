@@ -1876,19 +1876,20 @@ textarea {
     display: flex;
     color: #4F4F4F;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: bold;
     text-align: center;
     position: relative;
+    margin-top: 10px;
 }
 @media (max-width: 1200px) {
     .cloud-phone {
         display: flex;
         color: #4F4F4F;
         cursor: pointer;
-        font-size: 22px;
+        font-size: 18px;
         font-weight: bold;
-        margin-top: 10px;
+
     }
 }
 
