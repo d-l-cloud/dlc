@@ -71,7 +71,7 @@
 
 </head>
 <body>
-{{ domain() }}
+{{ $_SERVER['SERVER_NAME'] }}
 <div class="main-wrap">
 <article class="main">
     @widget('siteCatalogMenu')
