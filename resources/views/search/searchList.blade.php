@@ -1,5 +1,5 @@
 @extends('layouts.main')
-@section('title') | Результаты поиска по запросу - {{ $page['title'] }}@endsection
+@section('title') Результаты поиска по запросу - {{ $page['title'] }} | @endsection
 @section('content')
 
     <div class="breadcrumps" itemscope itemtype="http://schema.org/BreadcrumbList"><a class="breadcrumps-item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" href="/">Главная</a><div class="breadcrumps-item breadcrumps-current" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">Поиск</div></div>
