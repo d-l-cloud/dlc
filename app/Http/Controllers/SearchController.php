@@ -14,7 +14,7 @@ class SearchController extends Controller
     {
 
         $query=strip_tags(htmlspecialchars($request->route('query')));
-        $products = ProductList::search($query)->paginate(12);
+        $products = ProductList::search($query)->paginate();
         //$products = ProductList::search($query)->within('product_lists')->where('variable',0)->where('variable',1)->paginate(12);
         $productCategory = ProductCategory::get();
         $countArray = 0;
