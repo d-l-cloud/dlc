@@ -14,7 +14,7 @@ class ShowProductController extends Controller
     public function index(Request $request)
     {
         $productArticle = $request->route('productArticle');
-        $productData = ProductList::with("vendor")->with("category")->where("article", $productArticle)->firstOrFail();
+        $productData = ProductList::with("vendor")->with("category")->where("article", $productArticle)->where("isHidden",'=', 0)->firstOrFail();
         $productData->views = $productData->views+1;
         $productData->save();
         $productPropertyList = ProductPropertyList::with("propertyName")->where("productId", $productData->id)->get();
