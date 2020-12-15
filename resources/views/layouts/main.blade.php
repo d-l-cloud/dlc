@@ -71,6 +71,7 @@
 
 </head>
 <body>
+{{ domain() }}
 <div class="main-wrap">
 <article class="main">
     @widget('siteCatalogMenu')
