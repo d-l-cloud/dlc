@@ -2,6 +2,7 @@
 
 namespace App\Mail;
 
+use App\Models\Site\SiteSettings;
 use Illuminate\Bus\Queueable;
 use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
@@ -30,8 +31,14 @@ class formMailSend extends Mailable
      */
     public function build()
     {
+        $findesiteSettings = SiteSettings::where('id', '=', 1)->first();
+        if ($findesiteSettings){
+            $fromName = ' - '.$findesiteSettings->city.' | ';
+        }else {
+            $fromName = '';
+        }
         return $this->subject($this->subject)
-            ->from(env('MAIL_FROM_ADDRESS'), 'Почтовый робот')
+            ->from(env('MAIL_FROM_ADDRESS'), 'Doorlock'.$fromName.'Почтовый робот '.date('H:i:s d-m-Y').'')
             ->bcc('123@doorlock.ru', 'Смирнову Вадиму')
             ->markdown('emails.formMailSend')
             ->with('details', $this->details);
