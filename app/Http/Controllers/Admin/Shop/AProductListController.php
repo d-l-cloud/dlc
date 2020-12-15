@@ -149,6 +149,9 @@ class AProductListController extends Controller
             $findeProductPropId->source = $request->source;
             $findeProductPropId->save();
         }
+        if ($request->images == '') {
+            $findeProductPropId->delete();
+        }else{}
         return redirect('/cpa/shop/product-list/'.$id.'/edit')->with('success','Товар успешно отредактирован');
     }
 
