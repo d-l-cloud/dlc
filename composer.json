@@ -35,7 +35,8 @@
         "spatie/laravel-query-builder": "^3.3",
         "spatie/laravel-searchable": "^1.8",
         "teamtnt/laravel-scout-tntsearch-driver": "^11.1",
-        "unisharp/laravel-filemanager": "^2.2"
+        "unisharp/laravel-filemanager": "^2.2",
+        "fzaninotto/faker": "^1.9.1"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.5",

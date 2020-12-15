@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa941a61-0874-4491-8dd8-b73df17191be" name="Default Changelist" comment="v.0.0.0.2">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="aa941a61-0874-4491-8dd8-b73df17191be" name="Default Changelist" comment="v.0.0.0.5">
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,7 +214,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608031146686</updated>
-      <workItem from="1608031149436" duration="2674000" />
+      <workItem from="1608031149436" duration="2993000" />
     </task>
     <task id="LOCAL-00001" summary="v.0.0.0.1">
       <created>1608032644578</created>
@@ -230,7 +230,28 @@
       <option name="project" value="LOCAL" />
       <updated>1608032696743</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="v.0.0.0.3">
+      <created>1608035480412</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1608035480412</updated>
+    </task>
+    <task id="LOCAL-00004" summary="v.0.0.0.4">
+      <created>1608035532921</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1608035532921</updated>
+    </task>
+    <task id="LOCAL-00005" summary="v.0.0.0.5">
+      <created>1608035572451</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1608035572451</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -242,6 +263,9 @@
     </ignored-roots>
     <MESSAGE value="v.0.0.0.1" />
     <MESSAGE value="v.0.0.0.2" />
-    <option name="LAST_COMMIT_MESSAGE" value="v.0.0.0.2" />
+    <MESSAGE value="v.0.0.0.3" />
+    <MESSAGE value="v.0.0.0.4" />
+    <MESSAGE value="v.0.0.0.5" />
+    <option name="LAST_COMMIT_MESSAGE" value="v.0.0.0.5" />
   </component>
 </project>
