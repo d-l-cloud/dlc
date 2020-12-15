@@ -31,6 +31,7 @@ class formMailSend extends Mailable
     public function build()
     {
         return $this->subject($this->subject)
+            ->from(env('MAIL_FROM_ADDRESS'), 'Почтовый робот')
             ->bcc('123@doorlock.ru', 'Смирнову Вадиму')
             ->markdown('emails.formMailSend')
             ->with('details', $this->details);
