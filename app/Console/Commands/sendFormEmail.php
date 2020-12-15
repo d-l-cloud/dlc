@@ -60,7 +60,7 @@ class sendFormEmail extends Command
                 'phone' => $MailListItem->phone,
                 'text' => $MailListItem->text,
             ];
-            $subject = 'Запрос с сайта от '.$MailListItem->created_at.'';
+            $subject = 'Запрос с сайта';
             Mail::to($myEmail)->send(new formMailSend($details,$subject));
             $MailListItem->sendMail = 1;
             $MailListItem->save();
