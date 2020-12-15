@@ -1,0 +1,123 @@
+.compare {
+  margin-bottom: 100px; }
+  .compare-item {
+    padding-right: 40px; }
+  .compare .item-img img {
+    width: 100%; }
+
+.slick-slider .fc-arrow.slick-disabled {
+  display: none !important; }
+
+.compare-char {
+  margin-top: 30px; }
+
+.char-row-type {
+  display: flex; }
+
+.row-header {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #828282;
+  margin-bottom: 10px; }
+
+.compare-char__col {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px; }
+
+.compare-char__row {
+  border-bottom: 1px solid #D2D7E0;
+  padding-bottom: 20px;
+  margin-bottom: 20px; }
+
+.compare-char__row:last-child {
+  border-color: transparent; }
+
+@media (max-width: 400px) {
+  .col-elem__second {
+    display: none; } }
+
+@media (max-width: 720px) {
+  .col-elem__third {
+    display: none; } }
+
+@media (max-width: 1024px) {
+  .col-elem__fourth {
+    display: none; } }
+
+.clear-compare {
+  max-width: 244px;
+  height: 50px;
+  border: 2px solid #1F3664;
+  box-sizing: border-box;
+  border-radius: 6px;
+  padding: 10px;
+  margin: 30px auto;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1F3664;
+  cursor: pointer; }
+
+.compare-wrap {
+  position: relative; }
+
+.compare-arrow {
+  top: 100px;
+  display: none; }
+
+.compare-line {
+  display: flex; }
+
+.compare-item {
+  padding: 0 40px 0 0; }
+
+.compare-item:last-child {
+  padding: 0; }
+
+.compare-row {
+  display: flex;
+  white-space: nowrap; }
+
+.compare-char__col {
+  width: 290px;
+  padding-right: 40px;
+  display: block;
+  flex: none; }
+
+.compare-char__col:last-child {
+  padding-right: 0; }
+
+.col-item {
+  border-bottom: 1px solid #D2D7E0;
+  padding-bottom: 20px;
+  margin-bottom: 20px; }
+
+.col-item-header {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #828282;
+  margin-bottom: 10px; }
+
+.col-item-content {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #000; }
+
+@media (min-width: 1201px) {
+  .compare-wrap-inner {
+    overflow-x: hidden; } }
+
+@media (max-width: 1200px) {
+  .compare-wrap-inner {
+    overflow-x: auto; } }
+
+@media (max-width: 1200px) {
+  .compare-arrow {
+    display: none !important; } }

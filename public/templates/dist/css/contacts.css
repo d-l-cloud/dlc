@@ -1,0 +1,62 @@
+.contacts {
+  margin-bottom: 100px; }
+  .contacts-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 90px; }
+    @media (max-width: 1024px) {
+      .contacts-row {
+        flex-wrap: wrap; } }
+  .contacts .section-header {
+    margin-bottom: 20px; }
+
+.map-2gis-col {
+  width: 620px; }
+  @media (max-width: 1024px) {
+    .map-2gis-col {
+      max-width: 100% !important;
+      width: 100% !important; } }
+
+.contacts-info-col {
+  max-width: 620px; }
+  @media (max-width: 1024px) {
+    .contacts-info-col {
+      flex-wrap: wrap;
+      max-width: 100%;
+      width: 100%; } }
+
+.contacts-head {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  color: #828282; }
+
+.contacts-text {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 26px;
+  margin-bottom: 10px; }
+
+.contacts-description__text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  margin-bottom: 10px; }
+
+.contacts-activity {
+  display: flex; }
+  .contacts-activity__period {
+    margin-right: 30px; }
+
+.map-2gis {
+  max-width: 620px;
+  width: 100%;
+  max-height: 600px;
+  height: 100%; }
+
+.documents ol li {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  list-style-type: decimal;
+  margin-left: 15px; }

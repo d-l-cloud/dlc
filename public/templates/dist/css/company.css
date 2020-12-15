@@ -1,0 +1,47 @@
+.company {
+  margin-bottom: 100px; }
+
+.company-wrap {
+  width: 100%;
+  font-size: 14px; }
+
+.list-item {
+  margin-bottom: 10px;
+  list-style-type: disc;
+  font-size: 14px;
+  margin-left: 20px;
+  line-height: 23px; }
+
+.paragraph-in-list {
+  margin-bottom: 20px !important; }
+
+.company-requisites {
+  width: 100%; }
+
+.company-requisites__row {
+  display: flex; }
+  @media (max-width: 500px) {
+    .company-requisites__row {
+      flex-direction: column; } }
+
+.company-requisites__col {
+  margin-bottom: 10px; }
+
+.rquisites-col__left {
+  max-width: 350px;
+  width: 100%;
+  margin-right: 30px;
+  color: #4F4F4F; }
+  @media (max-width: 800px) {
+    .rquisites-col__left {
+      max-width: 250px; } }
+  @media (max-width: 650px) {
+    .rquisites-col__left {
+      max-width: 150px; } }
+  @media (max-width: 500px) {
+    .rquisites-col__left {
+      max-width: 100%; } }
+
+.rquisites-col__right {
+  color: #000;
+  font-weight: bold; }

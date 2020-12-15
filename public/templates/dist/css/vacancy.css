@@ -1,0 +1,11 @@
+.vacancy {
+  margin-bottom: 100px; }
+
+.vacancy-wrap {
+  max-width: 950px;
+  width: 100%; }
+
+.vacancy-item__name {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px; }

@@ -1,0 +1,65 @@
+.glossary {
+  margin-bottom: 100px; }
+
+.search__input {
+  height: 40px;
+  padding: 10px 15px;
+  width: 100%;
+  border: 2px solid #D2D7E0;
+  box-sizing: border-box;
+  border-radius: 6px;
+  outline: none; }
+
+.glossary-search {
+  max-width: 250px;
+  margin-bottom: 20px;
+  position: relative; }
+
+.glossary-letters {
+  display: flex;
+  border: 2px solid #F5F8FB;
+  box-sizing: border-box;
+  border-radius: 6px;
+  max-width: 1196px;
+  width: 100%;
+  margin-bottom: 20px; }
+  @media (max-width: 1250px) {
+    .glossary-letters {
+      flex-wrap: wrap; } }
+  .glossary-letters__item {
+    color: #828282;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 10px 15px;
+    position: relative;
+    cursor: pointer; }
+  .glossary-letters__all {
+    color: #000; }
+
+.glossary-letters__item:not(:first-child):before {
+  content: '';
+  position: absolute;
+  height: 20px;
+  width: 3px;
+  background-color: #F5F8FB;
+  display: block;
+  border-radius: 100px;
+  left: 0; }
+
+.glossary-wrap {
+  max-width: 950px;
+  width: 100%; }
+  .glossary-wrap .show-more-goods {
+    margin-top: 40px; }
+
+.glossary-item {
+  border-bottom: 1px solid #D2D7E0;
+  margin-bottom: 20px; }
+  .glossary-item .paragraph {
+    margin-bottom: 10px; }
+  .glossary-item__header {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 20px; }

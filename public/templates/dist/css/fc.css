@@ -1,0 +1,41 @@
+.fcclub {
+  margin-bottom: 100px; }
+
+.fcclub-wrap {
+  max-width: 950px;
+  width: 100%; }
+
+.fc-slider__big {
+  margin-bottom: 20px;
+  max-width: 760px;
+  width: 100%; }
+  .fc-slider__big .slide-item img {
+    width: 100%;
+    height: auto; }
+
+.fc-slider__small {
+  max-width: 760px;
+  width: 100%; }
+
+.fcclub-slider {
+  max-width: 830px;
+  width: 100%;
+  margin: 0 auto; }
+  .fcclub-slider .slick-next {
+    right: -9px; }
+
+.slide-item {
+  padding: 0 10px;
+  border: 2px solid transparent; }
+
+.fc-slider__small .slide-item img {
+  height: 94px;
+  width: 94px;
+  border-radius: 6px; }
+
+.fc-slider__small .slick-current img {
+  border: 2px solid #1F3664;
+  border-radius: 6px; }
+
+.fcclub-slider .slick-prev {
+  left: -8px !important; }
