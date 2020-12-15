@@ -1886,8 +1886,9 @@ textarea {
         display: flex;
         color: #4F4F4F;
         cursor: pointer;
-        font-size: 18px;
+        font-size: 22px;
         font-weight: bold;
+        margin-top: 10px;
     }
 }
 
