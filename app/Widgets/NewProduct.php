@@ -5,7 +5,7 @@ namespace App\Widgets;
 use App\Models\Shop\ProductList;
 use Arrilot\Widgets\AbstractWidget;
 
-class newProduct1 extends AbstractWidget
+class newProduct extends AbstractWidget
 {
     /**
      * The configuration array.
