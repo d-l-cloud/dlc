@@ -70,7 +70,7 @@
     <link rel="icon" href="{{ asset('templates/dist/favicon/favicon.ico') }}" type="image/x-icon">
 
 </head>
-<body>dfg
+<body>
 <div class="main-wrap">
 <article class="main">
     @widget('siteCatalogMenu')
