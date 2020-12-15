@@ -68,10 +68,11 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="shortcut icon" href="{{ asset('templates/dist/favicon/favicon.ico') }}" type="image/x-icon">
     <link rel="icon" href="{{ asset('templates/dist/favicon/favicon.ico') }}" type="image/x-icon">
-
+@if ($_SERVER['SERVER_NAME']=='doorlock52.ru')
+        <meta name="yandex-verification" content="92b217dbbd1a4100" />
+@endif
 </head>
 <body>
-{{ $_SERVER['SERVER_NAME'] }}
 <div class="main-wrap">
 <article class="main">
     @widget('siteCatalogMenu')
