@@ -14,7 +14,7 @@ class SearchController extends Controller
     {
 
         $query=strip_tags(htmlspecialchars($request->route('query')));
-        $products = ProductList::search($query)->paginate(12);
+        $products = ProductList::search($query)->where("isHidden",'=', 0)->paginate(12);
         //$products = ProductList::search($query)->within('product_lists')->where('variable',0)->where('variable',1)->paginate(12);
         $productCategory = ProductCategory::get();
         $countArray = 0;
@@ -56,7 +56,7 @@ class SearchController extends Controller
 
     public function searchNames(Request $request) {
         if ($request->searchText) {
-            $products = ProductList::search($request->searchText)->paginate(5);
+            $products = ProductList::search($request->searchText)->where("isHidden",'=', 0)->paginate(5);
             $checkTotal = collect($products)->get('total');
             if ($checkTotal!=0) {
                 $countArray = 0;
