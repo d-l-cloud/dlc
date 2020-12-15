@@ -4,6 +4,7 @@ namespace App\Console\Commands;
 
 use App\Mail\formMailSend;
 use App\Models\Site\SiteForm;
+use App\Models\Site\SiteSettings;
 use App\Notifications\NotifyFormEmailUser;
 use Illuminate\Console\Command;
 use Illuminate\Support\Facades\Mail;
@@ -43,7 +44,13 @@ class sendFormEmail extends Command
     {
         $getSendMailList = SiteForm::where('sendMail','=',0)->get();
         foreach ($getSendMailList as $MailListItem) {
-            $myEmail = 'dabsurd@gmail.com';
+            $findesiteSettings = SiteSettings::where('id', '=', 1)->first();
+            if ($findesiteSettings){
+                $myEmail = $findesiteSettings->emailNotifications;
+            }else {
+                $myEmail = 'robopost@d-l.cloud';
+            }
+
             $details = [
                 'title' => 'Запрос с сайта от '.$MailListItem->created_at.'',
                 'questionType' => $MailListItem->questionType,
