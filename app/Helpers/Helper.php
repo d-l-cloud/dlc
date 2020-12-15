@@ -24,7 +24,7 @@ class Helper
         return $fullUrl;
     }
     public static function variable($parentArticle) {
-        $findeVariableProduct = ProductList::where('parentArticle', '=', $parentArticle)->get();
+        $findeVariableProduct = ProductList::where('parentArticle', '=', $parentArticle)->where("isHidden",'=', 0)->get();
         $findeVariableproductCount = $findeVariableProduct->count()-1;
         return $findeVariableproductCount;
     }
