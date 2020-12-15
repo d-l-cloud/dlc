@@ -58,7 +58,7 @@
                                                         <div class="form-group">
                                                             <label>Адрес</label>
                                                             <input id="address" type="text" name="address" class="form-control" value="{{ $settingsList->address }}" data-validation-required-message="{{ __('This field is required') }}" required>
-                                                            <p class="text-left"><small class="text-muted">Полный адрес, пример: <strong>Россия, 117630, г. Москва, Старокалужское шоссе, дом 62, этаж.4, пом. I, ком. 11.</strong></small></p>
+                                                            <p class="text-left"><small class="text-muted">Полный адрес, пример: <strong>117630, г. Москва, Старокалужское шоссе, дом 62, этаж.4, пом. I, ком. 11.</strong></small></p>
                                                             <div class="help-block"></div>
                                                         </div>
                                                     </div>

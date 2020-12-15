@@ -3,15 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="aa941a61-0874-4491-8dd8-b73df17191be" name="Default Changelist" comment="v.0.0.0.5">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Widgets/menuFooter.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Widgets/MenuFooter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Widgets/menuHeader.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Widgets/MenuHeader.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Widgets/mobileSiteCatalogMenu.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Widgets/MobileSiteCatalogMenu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Widgets/mostViewedProduct.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Widgets/MostViewedProduct.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Widgets/newProduct.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Widgets/NewProduct1.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Widgets/newsList.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Widgets/NewsList.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Widgets/siteCatalogMenu.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Widgets/SiteCatalogMenu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Widgets/vendor.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Widgets/Vendor.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Widgets/vendorProduct.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Widgets/VendorProduct.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/settings/site-settings.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/settings/site-settings.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,7 +215,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1608031146686</updated>
-      <workItem from="1608031149436" duration="8689000" />
+      <workItem from="1608031149436" duration="17461000" />
     </task>
     <task id="LOCAL-00001" summary="v.0.0.0.1">
       <created>1608032644578</created>
@@ -267,7 +259,35 @@
       <option name="project" value="LOCAL" />
       <updated>1608035675140</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="v.0.0.0.5">
+      <created>1608041493831</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1608041493831</updated>
+    </task>
+    <task id="LOCAL-00008" summary="v.0.0.0.5">
+      <created>1608041594489</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1608041594489</updated>
+    </task>
+    <task id="LOCAL-00009" summary="v.0.0.0.5">
+      <created>1608041678050</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1608041678050</updated>
+    </task>
+    <task id="LOCAL-00010" summary="v.0.0.0.5">
+      <created>1608041707913</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1608041707913</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
