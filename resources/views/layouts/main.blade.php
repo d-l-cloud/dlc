@@ -1,4 +1,4 @@
-@if ($_SERVER['SERVER_NAME']=='d-l.cloud')
+@if ($_SERVER['SERVER_NAME']!='d-l.cloud')
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
