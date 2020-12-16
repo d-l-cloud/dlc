@@ -361,9 +361,7 @@
 
     </style>
     <div class="x">
-        <a class="y" href="/">
-            <img class="header-logo" src="{{ asset('templates/img/logo_new.svg') }}" alt="">
-        </a>
+        <img class="y" src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Black-Large.png" alt="codepen" />
     </div>
 
 @endif
