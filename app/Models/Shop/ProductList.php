@@ -92,9 +92,9 @@ class ProductList extends Model
         $productData['name'] = $this->name;
         return $productData;*/
         return [
-            'id'                    => $this->id,
-            'article'               => $this->article,
-            'name'                  => $this->name,
+            'id'        => $this->id,
+            'article'   => $this->article,
+            'name'      => $this->name,
         ];
 
     }
