@@ -336,7 +336,7 @@
                 margin: 0;
             }
 
-            a,
+            img,
             div {
                 width: 100px;
 
@@ -380,11 +380,11 @@
         </style>
     </head>
     <body>
+    <a href="/">
     <div class="x">
-        <a class="y" href="/">
-            <img class="header-logo" src="{{ asset('templates/img/logo_new.svg') }}" alt="">
-        </a>
+            <img class="y" class="header-logo" src="{{ asset('templates/img/logo_new.svg') }}" alt="">
     </div>
+    </a>
     </body>
     </html>
 
