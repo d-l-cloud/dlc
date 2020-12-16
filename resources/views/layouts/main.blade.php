@@ -355,27 +355,27 @@
 
             @-webkit-keyframes x {
                 100% {
-                    -webkit-transform: translateX(calc(100vw - 100px));
-                    transform: translateX(calc(100vw - 100px));
+                    -webkit-transform: translateX(calc(100vw - 300px));
+                    transform: translateX(calc(100vw - 300px));
                 }
             }
 
             @keyframes x {
                 100% {
-                    -webkit-transform: translateX(calc(100vw - 100px));
-                    transform: translateX(calc(100vw - 100px));
+                    -webkit-transform: translateX(calc(100vw - 300px));
+                    transform: translateX(calc(100vw - 300px));
                 }
             }
             @-webkit-keyframes y {
                 100% {
-                    -webkit-transform: translateY(calc(100vh - 100px));
-                    transform: translateY(calc(100vh - 100px));
+                    -webkit-transform: translateY(calc(100vh - 300px));
+                    transform: translateY(calc(100vh - 300px));
                 }
             }
             @keyframes y {
                 100% {
-                    -webkit-transform: translateY(calc(100vh - 100px));
-                    transform: translateY(calc(100vh - 100px));
+                    -webkit-transform: translateY(calc(100vh - 300px));
+                    transform: translateY(calc(100vh - 300px));
                 }
             }
         </style>
