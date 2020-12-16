@@ -267,7 +267,7 @@ class AddVendorData extends Command
             ['vendor'=>'NoName','text'=>'','images'=>''],
         ];
         foreach ($data as $dataItem) {
-            $getVendorList = ProductVendor::where('text','!=','')->where('name','=',$dataItem['vendor'])->first();
+            $getVendorList = ProductVendor::where('name','=',$dataItem['vendor'])->first();
             if ($getVendorList) {
                 $getVendorList->text = $dataItem['text'];
                 $getVendorList->images = $dataItem['images'];
