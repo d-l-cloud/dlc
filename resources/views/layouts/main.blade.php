@@ -332,38 +332,51 @@
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
         <title>Document</title>
         <style>
-            $size: 100px;
-
             body {
                 margin: 0;
             }
 
             img,
             div {
-                width: $size;
-                height: $size;
+                width: 100px;
+                height: 100px;
             }
 
             .x {
+                -webkit-animation: x 13s linear infinite alternate;
                 animation: x 13s linear infinite alternate;
             }
 
             .y {
+                -webkit-animation: y 7s linear infinite alternate;
                 animation: y 7s linear infinite alternate;
+            }
+
+            @-webkit-keyframes x {
+                100% {
+                    -webkit-transform: translateX(calc(100vw - 100px));
+                    transform: translateX(calc(100vw - 100px));
+                }
             }
 
             @keyframes x {
                 100% {
-                    transform: translateX(calc(100vw - #{$size}));
+                    -webkit-transform: translateX(calc(100vw - 100px));
+                    transform: translateX(calc(100vw - 100px));
                 }
             }
-
+            @-webkit-keyframes y {
+                100% {
+                    -webkit-transform: translateY(calc(100vh - 100px));
+                    transform: translateY(calc(100vh - 100px));
+                }
+            }
             @keyframes y {
                 100% {
-                    transform: translateY(calc(100vh - #{$size}));
+                    -webkit-transform: translateY(calc(100vh - 100px));
+                    transform: translateY(calc(100vh - 100px));
                 }
             }
-
         </style>
     </head>
     <body>
