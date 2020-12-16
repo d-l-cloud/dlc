@@ -11,7 +11,7 @@ class ShowManufacturerController extends Controller
 {
     public function index()
     {
-        $vendorList = ProductVendor::where("isHidden",'!=', 1)->get();;
+        $vendorList = ProductVendor::orderBy('name')->where("isHidden",'!=', 1)->get();;
         return view('manufacturer.showVendorList')
             ->with('vendorList',$vendorList);
     }

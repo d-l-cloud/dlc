@@ -9,8 +9,8 @@
         <section class="brand-catalog" style="margin-bottom: 25px;">
             <div class="brand-description" style="margin-bottom: 25px;">
                 <div class="brand-img">
-                    @if ($manufacturerData->image)
-                        <img src="{{ $manufacturerData->image }}" alt="{{ $manufacturerData->title }}" style="vertical-align: middle;max-height:290px;max-width:290px;">
+                    @if ($manufacturerData->images)
+                        <img src="{{ $manufacturerData->images }}" alt="{{ $manufacturerData->title }}" style="vertical-align: middle;max-height:290px;max-width:290px;">
                     @else
                         <img src="/templates/img/foto_not_found.jpg" alt="{{ $manufacturerData->title }}" style="vertical-align: middle;max-height:290px;max-width:290px;">
                     @endif
@@ -34,7 +34,7 @@
 
                         </style>
                         <div class="desc_man">
-                            {{ $manufacturerData->text }}
+                            {!! $manufacturerData->text !!}
                         </div>
                         <br>						</div>
                     <div class="brand-info__more">Читать полностью</div>
