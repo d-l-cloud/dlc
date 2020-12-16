@@ -332,6 +332,10 @@
         </a>
     </div>
 <style>
+    a, div {
+        width: $size;
+        height: $size;
+    }
     .x {
         animation: x 13s linear infinite alternate;
     }
