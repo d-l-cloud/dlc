@@ -326,36 +326,46 @@
 </body>
 </html>
 @else
+    <style>
+        $size: 100px;
+
+        body {
+            margin: 0;
+        }
+
+        a,
+        div {
+            width: $size;
+            height: $size;
+        }
+
+        .x {
+            animation: x 13s linear infinite alternate;
+        }
+
+        .y {
+            animation: y 7s linear infinite alternate;
+        }
+
+        @keyframes x {
+            100% {
+                transform: translateX(calc(100vw - #{$size}));
+            }
+        }
+
+        @keyframes y {
+            100% {
+                transform: translateY(calc(100vh - #{$size}));
+            }
+        }
+
+    </style>
     <div class="x">
         <a class="y" href="/">
             <img class="header-logo" src="{{ asset('templates/img/logo_new.svg') }}" alt="">
         </a>
     </div>
-<style>
-    a, div {
-        width: $size;
-        height: $size;
-    }
-    .x {
-        animation: x 13s linear infinite alternate;
-    }
 
-    .y {
-        animation: y 7s linear infinite alternate;
-    }
-
-    @keyframes x {
-        100% {
-            transform: translateX( calc(100vw - #{$size}) );
-        }
-    }
-
-    @keyframes y {
-        100% {
-            transform: translateY( calc(100vh - #{$size}) );
-        }
-    }
-    </style>
 @endif
 
 
