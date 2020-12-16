@@ -326,7 +326,7 @@
 </body>
 </html>
 @else
-    <!<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+    <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
     <html lang="en">
     <head>
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
@@ -336,10 +336,10 @@
                 margin: 0;
             }
 
-            img,
+            a,
             div {
                 width: 100px;
-                height: 100px;
+
             }
 
             .x {
@@ -381,7 +381,9 @@
     </head>
     <body>
     <div class="x">
-        <img class="y" src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Black-Large.png" alt="codepen" />
+        <a class="y" href="/">
+            <img class="header-logo" src="{{ asset('templates/img/logo_new.svg') }}" alt="">
+        </a>
     </div>
     </body>
     </html>
