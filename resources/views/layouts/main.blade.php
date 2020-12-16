@@ -327,8 +327,9 @@
 </html>
 @else
     <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-    <html lang="en">
+    <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
+        <title>@yield('title'){{ config('app.name', 'Laravel') }} {!! Helper::siteSettings('city','1') !!}</title>
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
         <title>Document</title>
         <style>
@@ -338,7 +339,7 @@
 
             img,
             div {
-                width: 100px;
+                width: 300px;
 
             }
 
