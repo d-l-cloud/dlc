@@ -74,6 +74,7 @@
 @endif
 </head>
 <body>
+{{ Helper::siteSettings('maintenance','1') }}
 <div class="main-wrap">
 <article class="main">
     @widget('siteCatalogMenu')
