@@ -1,4 +1,4 @@
-@if (($_SERVER['SERVER_NAME']!='d-l.cloud') AND (Helper::siteSettings('maintenance','1')!=1))
+@if ((($_SERVER['SERVER_NAME']!='d-l.cloud') AND (Helper::siteSettings('maintenance','1')!=1)) OR (Request::is('login')))
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
