@@ -326,43 +326,54 @@
 </body>
 </html>
 @else
-    <style>
-        $size: 100px;
+    <!<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+    <html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <title>Document</title>
+        <style>
+            $size: 100px;
 
-        body {
-            margin: 0;
-        }
-
-        img,
-        div {
-            width: $size;
-            height: $size;
-        }
-
-        .x {
-            animation: x 13s linear infinite alternate;
-        }
-
-        .y {
-            animation: y 7s linear infinite alternate;
-        }
-
-        @keyframes x {
-            100% {
-                transform: translateX(calc(100vw - #{$size}));
+            body {
+                margin: 0;
             }
-        }
 
-        @keyframes y {
-            100% {
-                transform: translateY(calc(100vh - #{$size}));
+            img,
+            div {
+                width: $size;
+                height: $size;
             }
-        }
 
-    </style>
+            .x {
+                animation: x 13s linear infinite alternate;
+            }
+
+            .y {
+                animation: y 7s linear infinite alternate;
+            }
+
+            @keyframes x {
+                100% {
+                    transform: translateX(calc(100vw - #{$size}));
+                }
+            }
+
+            @keyframes y {
+                100% {
+                    transform: translateY(calc(100vh - #{$size}));
+                }
+            }
+
+        </style>
+    </head>
+    <body>
     <div class="x">
         <img class="y" src="https://blog.codepen.io/wp-content/uploads/2012/06/Button-Black-Large.png" alt="codepen" />
     </div>
+    </body>
+    </html>
+
+
 
 @endif
 
