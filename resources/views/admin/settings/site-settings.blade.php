@@ -87,6 +87,22 @@
                                                             <div class="help-block"></div>
                                                         </div>
                                                     </div>
+                                                    <div class="col-md-12">
+                                                        <div class="form-group form-check">
+                                                            <input type="hidden" name="maintenance" value="0">
+                                                            <input @if (old('maintenance') == 1 || $settingsList->maintenance == 1) checked @endif type="checkbox" class="form-check-input @error('maintenance') is-invalid @enderror" name="maintenance" value="1">
+                                                            <label class="form-check-label">Закрыть сайт на профилактику?</label>
+                                                            <div class="help-block">
+                                                                @if($errors->has('maintenance'))
+                                                                    <ul role="alert">
+                                                                        @foreach($errors->get('maintenance') as $error)
+                                                                            <li>{{ $error }}</li>
+                                                                        @endforeach
+                                                                    </ul>
+                                                                @endif
+                                                            </div>
+                                                        </div>
+                                                    </div>
 
                                                 </div>
                                             </div>

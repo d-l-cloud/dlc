@@ -21,6 +21,7 @@ class ASiteSettingsController extends Controller
         $settings->phone = $request->phone;
         $settings->workingHours = $request->workingHours;
         $settings->javaCode = $request->javaCode;
+        $settings->maintenance = $request->maintenance;
         $settings->user_id  = $request->user_id;
         $settings->updated_at = now();
         $settings->save();
