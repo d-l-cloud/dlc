@@ -83,7 +83,7 @@ class ProductList extends Model
     public function toSearchableArray()
     {
         $array = $this->toArray();
-        return array('id' => $array['id'],'article' => $array['article'],'name' => $array['name']);
+        return array('article' => $array['article'],'name' => $array['name']);
     }
 
     public function getSearchResult(): SearchResult
