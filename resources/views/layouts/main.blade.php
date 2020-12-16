@@ -333,7 +333,7 @@
             margin: 0;
         }
 
-        a,
+        img,
         div {
             width: $size;
             height: $size;
