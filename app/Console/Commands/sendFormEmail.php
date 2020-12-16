@@ -52,7 +52,7 @@ class sendFormEmail extends Command
             }
 
             $details = [
-                'title' => 'Запрос с сайта от '.$MailListItem->created_at.'',
+                'title' => 'Запрос с сайта',
                 'questionType' => $MailListItem->questionType,
                 'productName' => $MailListItem->productName,
                 'name' => $MailListItem->name,
