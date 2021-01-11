@@ -93,10 +93,10 @@ Route::name('admin.')
                 Artisan::call('route:clear');
                 return redirect()->route('admin.index');
             })->name('clear-all')->middleware('role:super-admin');
-            Route::get('/scout-flush-52', function() {
-                Artisan::call('scout:flush --domain=doorlock52.ru', ["model" => "App\\Models\\Shop\\ProductList"]);
+            Route::get('/scout-flush', function() {
+                Artisan::call('scout:flush', ["model" => "App\\Models\\Shop\\ProductList"]);
                 return redirect()->route('admin.index');
-            })->name('scout-flush-52')->middleware('role:super-admin');
+            })->name('scout-flush')->middleware('role:super-admin');
 
         }
     );
