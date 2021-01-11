@@ -93,10 +93,6 @@ Route::name('admin.')
                 Artisan::call('route:clear');
                 return redirect()->route('admin.index');
             })->name('clear-all')->middleware('role:super-admin');
-            Route::get('/scout-flush', function() {
-                Artisan::call('scout:flush "App\Models\Shop\ProductList"');
-                return redirect()->route('admin.index');
-            })->name('scout-flush')->middleware('role:super-admin');
 
         }
     );
