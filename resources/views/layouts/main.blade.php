@@ -92,6 +92,11 @@
                                 </svg>
                             </a>
                         </div>
+                        @if (Helper::siteSettings('contactEmail','1') != 0) AND (Helper::siteSettings('contactEmail','1') != '')
+                            {!! Helper::siteSettings('contactEmail','1') !!}
+                        @elseif
+                            {!! Helper::siteSettings('emailNotifications','1') !!}
+                        @endif
                         <div
                             class="header-contacts__item header-phone header-phone-changable">
                             <a class="js-current-header-phone" href="tel:+74959319631">
