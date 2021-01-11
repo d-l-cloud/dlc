@@ -97,12 +97,7 @@
                         @else
                             {!! Helper::siteSettings('emailNotifications','1') !!}
                         @endif
-                        <div
-                            class="header-contacts__item header-phone header-phone-changable">
-                            <a class="js-current-header-phone" href="tel:+74959319631">
-                                <span>+7 (495) 931-96-31</span>
-                            </a> - Головной офис Москва
-                        </div>
+
                         <div class="header-contacts__item feedback">
                             <div class="header-contacts__item feedback" data-web_form_text_id="letter_to_boss"><a data-fancybox data-type="iframe" data-src="/siteform/0/3" href="javascript:;">Связаться с нами</a></div>
                         </div>
@@ -225,6 +220,12 @@
                     1996-{{ date("Y") }} - Интернет-магазин “DOORLOCK”</p>
                 <p class="footer-copyright">
                     Представительство - {!! Helper::siteSettings('city','1') !!}</p>
+                <div
+                    class="header-contacts__item header-phone header-phone-changable">
+                    <a class="js-current-header-phone" href="tel:+74959319631">
+                        <span>+7 (495) 931-96-31</span>
+                    </a> - Головной офис Москва
+                </div>
             </div>
         </div>
     </div>
