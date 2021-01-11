@@ -214,7 +214,7 @@ class dataDlToCloud extends Command
                     $variableproductCount++;
                     $product = ProductList::find($variableProductItem->id);
                     $product->variable = $variableproductCount;
-                    $product->save();
+                    //$product->save();
                 }
             }else{}
         }

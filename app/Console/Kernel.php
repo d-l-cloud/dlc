@@ -25,7 +25,7 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        $schedule->command('getdata:dltocloud')->withoutOverlapping()->dailyAt('10:54');
+        $schedule->command('getdata:dltocloud')->withoutOverlapping()->dailyAt('11:27');
         $schedule->command('dlcloud:sendFormEmail')->withoutOverlapping()->everyMinute();
       /*  $schedule->command('scout:flush "App\Models\Shop\ProductList"')->withoutOverlapping()->everyFiveMinutes();
         $schedule->command('scout:import "App\Models\Shop\ProductList"')->withoutOverlapping()->everyFiveMinutes();
