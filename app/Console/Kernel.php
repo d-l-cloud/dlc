@@ -30,11 +30,11 @@ class Kernel extends ConsoleKernel
         if ($currentDomain==''){
             $schedule->command('getdata:dltocloud')->dailyAt('22:05')->withoutOverlapping();
         } elseif ($currentDomain=='doorlock52.ru'){
-            $schedule->command('getdata:dltocloud')->dailyAt('22:13')->withoutOverlapping();
+            $schedule->command('getdata:dltocloud')->dailyAt('22:14')->withoutOverlapping();
         }elseif ($currentDomain=='doorlock66.ru'){
-            $schedule->command('getdata:dltocloud')->dailyAt('22:15')->withoutOverlapping();
+            $schedule->command('getdata:dltocloud')->dailyAt('22:16')->withoutOverlapping();
         }elseif ($currentDomain=='doorlock42.ru'){
-            $schedule->command('getdata:dltocloud')->dailyAt('22:17')->withoutOverlapping();
+            $schedule->command('getdata:dltocloud')->dailyAt('22:18')->withoutOverlapping();
         }else {}
         $schedule->command('dlcloud:sendFormEmail')->withoutOverlapping();
         $schedule->command('scout:flush "App\Models\Shop\ProductList"')->withoutOverlapping();
