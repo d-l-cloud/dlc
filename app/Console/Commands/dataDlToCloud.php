@@ -173,7 +173,7 @@ class dataDlToCloud extends Command
                     $product->price = $productPrice;
                     $product->text = '';
                     $product->user_id = $userId;
-                    //$product->save();
+                    $product->save();
                 }
             }else{}
             $poductParamArrayOne = $productListXml->param;
@@ -196,7 +196,7 @@ class dataDlToCloud extends Command
                         $productProperty->productId = $poductId;
                         $productProperty->value = $poductPropertyValue;
                         $productProperty->user_id = $userId;
-                        //$productProperty->save();
+                        $productProperty->save();
                     }
                 }else {
                 }
