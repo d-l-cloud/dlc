@@ -29,8 +29,8 @@ class Kernel extends ConsoleKernel
         $schedule->command('dlcloud:sendFormEmail')->withoutOverlapping()->everyMinute();
         $schedule->command('scout:flush "App\Models\Shop\ProductList"')->withoutOverlapping();
         $schedule->command('scout:import "App\Models\Shop\ProductList"')->withoutOverlapping();
-        /*$schedule->command('scout:flush "App\Models\Shop\ProductList" --domain=doorlock52.ru')->withoutOverlapping();
-        $schedule->command('scout:import "App\Models\Shop\ProductList" --domain=doorlock52.ru')->withoutOverlapping()->everyMinute();*/
+        $schedule->command('scout:flush "App\Models\Shop\ProductList" --domain=doorlock52.ru')->withoutOverlapping();
+        $schedule->command('scout:import "App\Models\Shop\ProductList" --domain=doorlock52.ru')->withoutOverlapping();
     }
     /**
      * Register the commands for the application.
