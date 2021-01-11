@@ -92,6 +92,7 @@
                                 </svg>
                             </a>
                         </div>
+                        {!! Helper::siteSettings('contactEmail','1') !!}
                         @if ((Helper::siteSettings('contactEmail','1') != 0) AND (Helper::siteSettings('contactEmail','1') != ''))
                             {!! Helper::siteSettings('contactEmail','1') !!}
                         @else
