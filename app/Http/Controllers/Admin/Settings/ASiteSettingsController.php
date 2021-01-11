@@ -18,6 +18,7 @@ class ASiteSettingsController extends Controller
         $settings->city = $request->city;
         $settings->address = $request->address;
         $settings->emailNotifications = $request->emailNotifications;
+        $settings->contactEmail = $request->contactEmail;
         $settings->phone = $request->phone;
         $settings->workingHours = $request->workingHours;
         $settings->javaCode = $request->javaCode;
