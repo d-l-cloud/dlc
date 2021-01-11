@@ -73,6 +73,14 @@
                                                     </div>
                                                     <div class="col-lg-12 col-md-12">
                                                         <div class="form-group">
+                                                            <label>Контактный Email</label>
+                                                            <input type="email" name="contactEmail" class="form-control" value="{{ $settingsList->contactEmail }}" data-validation-email-message="Неверный формат Email" data-validation-required-message="{{ __('This field is required') }}" required>
+                                                            <p class="text-left"><small class="text-muted">Ящик будет указан в шапке и подвале сайта</small></p>
+                                                            <div class="help-block"></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-12 col-md-12">
+                                                        <div class="form-group">
                                                             <label>Номер телефона</label>
                                                             <input type="text" name="phone" class="form-control phone" value="{{ $settingsList->phone}}">
                                                             <p class="text-left"><small class="text-muted">Номер телефона для сайта</small></p>

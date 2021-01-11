@@ -13,6 +13,7 @@ class SiteSettings extends Model
         'address',
         'geocode',
         'emailNotifications',
+        'contactEmail',
         'phone',
         'workingHours',
     ];
