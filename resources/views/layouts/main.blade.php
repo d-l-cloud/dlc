@@ -94,7 +94,7 @@
                         </div>
                         @if ((Helper::siteSettings('contactEmail','1') != 0) AND (Helper::siteSettings('contactEmail','1') != ''))
                             {!! Helper::siteSettings('contactEmail','1') !!}
-                        @elseif
+                        @else
                             {!! Helper::siteSettings('emailNotifications','1') !!}
                         @endif
                         <div
