@@ -27,8 +27,8 @@ class Kernel extends ConsoleKernel
     {
         $schedule->command('getdata:dltocloud')->withoutOverlapping()->dailyAt('11:54');
         $schedule->command('dlcloud:sendFormEmail')->withoutOverlapping()->everyMinute();
-      /*  $schedule->command('scout:flush "App\Models\Shop\ProductList"')->withoutOverlapping()->everyFiveMinutes();
-        $schedule->command('scout:import "App\Models\Shop\ProductList"')->withoutOverlapping()->everyFiveMinutes();
+        $schedule->command('scout:flush "App\Models\Shop\ProductList"')->withoutOverlapping()->everyFiveMinutes();
+        /* $schedule->command('scout:import "App\Models\Shop\ProductList"')->withoutOverlapping()->everyFiveMinutes();
         $schedule->command('scout:flush "App\Models\Shop\ProductList" --domain=doorlock52.ru')->withoutOverlapping()->everyFiveMinutes();
         $schedule->command('scout:import "App\Models\Shop\ProductList" --domain=doorlock52.ru')->withoutOverlapping()->everyMinute();*/
     }
