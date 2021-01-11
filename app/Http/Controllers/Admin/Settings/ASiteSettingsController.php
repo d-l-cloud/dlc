@@ -26,7 +26,6 @@ class ASiteSettingsController extends Controller
         $settings->user_id  = $request->user_id;
         $settings->updated_at = now();
         $settings->save();
-        echo $request->contactEmail;
         //return redirect()->route('admin.settings.site')->with('success','Настройки сохранены');
     }
 }
