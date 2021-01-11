@@ -26,9 +26,8 @@ class Kernel extends ConsoleKernel
     protected function schedule(Schedule $schedule)
     {
         $currentDomain = app()->domain();
-        echo $currentDomain;
         //$schedule->command('getdata:dltocloud --domain=doorlock52.ru')->withoutOverlapping();
-        //$schedule->command('dlcloud:sendFormEmail --domain=doorlock52.ru')->withoutOverlapping();
+        $schedule->command('dlcloud:sendFormEmail --domain='.$currentDomain)->withoutOverlapping();
         //$schedule->command('scout:flush "App\Models\Shop\ProductList" --domain=doorlock52.ru')->withoutOverlapping();
         //$schedule->command('scout:import "App\Models\Shop\ProductList" --domain=doorlock52.ru')->withoutOverlapping();
     }
