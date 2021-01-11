@@ -30,7 +30,7 @@ class Kernel extends ConsoleKernel
         if ($currentDomain==''){
             $schedule->command('getdata:dltocloud')->dailyAt('22:05');
         } elseif ($currentDomain=='doorlock52.ru'){
-            $schedule->command('getdata:dltocloud')->dailyAt('22:8');
+            $schedule->command('getdata:dltocloud')->dailyAt('22:08');
         }elseif ($currentDomain=='doorlock66.ru'){
             $schedule->command('getdata:dltocloud')->dailyAt('22:11');
         }elseif ($currentDomain=='doorlock42.ru'){
