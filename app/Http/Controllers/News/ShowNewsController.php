@@ -10,7 +10,7 @@ class ShowNewsController extends Controller
 {
     public function index()
     {
-        $NewsList = News::where("isHidden",'!=', 1)->paginate(8);;
+        $NewsList = News::where("isHidden",'!=', 1)->orderByDesc('id')->paginate(8);;
         return view('news.showNewsList')
             ->with('NewsList',$NewsList);
     }
