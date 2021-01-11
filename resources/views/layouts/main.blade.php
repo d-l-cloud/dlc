@@ -175,7 +175,11 @@
                             <div class="footer-contacts__col">
                                 <a class="contacts-phone" href="tel:{!! Helper::siteSettings('phone','1') !!}">{!! Helper::siteSettings('phone','1') !!}</a>
                                 <p class="contacts-mail">
-                                    <a href="mailto:{!! Helper::siteSettings('emailNotifications','1') !!}">{!! Helper::siteSettings('emailNotifications','1') !!}</a>                                        </p>
+                                    @if (Helper::siteSettings('contactEmail','1') != '')
+                                        <a href="mailto:{!! Helper::siteSettings('contactEmail','1') !!}">{!! Helper::siteSettings('contactEmail','1') !!}</a>
+                                    @else
+                                        <a href="mailto:{!! Helper::siteSettings('emailNotifications','1') !!}">{!! Helper::siteSettings('emailNotifications','1') !!}</a>
+                                    @endif
                             </div>
                             <div class="footer-contacts__col">
                                 <style>
