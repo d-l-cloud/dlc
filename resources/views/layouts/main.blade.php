@@ -93,9 +93,9 @@
                             </a>
                         </div>--}}
                         @if (Helper::siteSettings('contactEmail','1') != '')
-                            {!! Helper::siteSettings('contactEmail','1') !!}
+                            <a href="mailto:{!! Helper::siteSettings('contactEmail','1') !!}">{!! Helper::siteSettings('contactEmail','1') !!}</a>
                         @else
-                            {!! Helper::siteSettings('emailNotifications','1') !!}
+                                    <a href="mailto:{!! Helper::siteSettings('emailNotifications','1') !!}">{!! Helper::siteSettings('emailNotifications','1') !!}</a>
                         @endif
 
                         <div class="header-contacts__item feedback">
