@@ -84,6 +84,11 @@ return [
         public_path('files') => storage_path('app/public'),
         public_path('files/r52') => storage_path('r52/app/public'),
         public_path('files/r77') => storage_path('r77/app/public'),
+        public_path('files/r66') => storage_path('r66/app/public'),
+        public_path('files/r42') => storage_path('r42/app/public'),
+        public_path('files/r78') => storage_path('r78/app/public'),
+        public_path('files/r59') => storage_path('r59/app/public'),
+        public_path('files/r40') => storage_path('r40/app/public'),
     ],
 
 ];
