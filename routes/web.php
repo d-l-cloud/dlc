@@ -94,7 +94,7 @@ Route::name('admin.')
                 return redirect()->route('admin.index');
             })->name('clear-all')->middleware('role:super-admin');
             Route::get('/scout-flush-52', function() {
-                Artisan::call('scout:flush "App/Models/Shop/ProductList" --domain=doorlock52.ru');
+                Artisan::call('scout:flush --domain=doorlock52.ru', ["model" => "App\\Models\\Shop\\ProductList"]);
                 return redirect()->route('admin.index');
             })->name('scout-flush-52')->middleware('role:super-admin');
 
