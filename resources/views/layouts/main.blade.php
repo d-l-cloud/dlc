@@ -221,7 +221,7 @@
                 <p class="footer-copyright">
                     Представительство - {!! Helper::siteSettings('city','1') !!}</p>
                 <div
-                    class="header-contacts__item header-phone header-phone-changable">
+                    class="footer-copyright">
                     <a class="js-current-header-phone" href="tel:+74959319631">
                         <span>+7 (495) 931-96-31</span>
                     </a> - Головной офис Москва
