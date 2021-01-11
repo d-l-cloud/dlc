@@ -173,8 +173,12 @@
                     <div class="footer-contacts">
                         <div class="footer-contacts__row">
                             <div class="footer-contacts__col">
+                                @if ($_SERVER['SERVER_NAME']=='doorlock52.ru')
+                                <a class="contacts-phone" href="tel:{!! Helper::siteSettings('phone','1') !!}">+7(800)5507-347</a>
+                                @else
                                 <a class="contacts-phone" href="tel:{!! Helper::siteSettings('phone','1') !!}">{!! Helper::siteSettings('phone','1') !!}</a>
-                                <p class="contacts-mail">
+                                @endif
+                                    <p class="contacts-mail">
                                     @if (Helper::siteSettings('contactEmail','1') != '')
                                         <a href="mailto:{!! Helper::siteSettings('contactEmail','1') !!}">{!! Helper::siteSettings('contactEmail','1') !!}</a>
                                     @else
