@@ -16,7 +16,21 @@
           </mappings>
         </serverdata>
       </paths>
+      <paths name="grizl">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="lhl-77">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="lhu">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />
