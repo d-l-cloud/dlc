@@ -14,7 +14,7 @@ class AlterTableSiteSettingsColumnContactMail extends Migration
     public function up()
     {
         Schema::table('site_settings', function (Blueprint $table) {
-            $table->boolean('contactEmail')->after('emailNotifications')->default(false);
+            $table->string('contactEmail')->after('emailNotifications')->default(false);
         });
     }
 
