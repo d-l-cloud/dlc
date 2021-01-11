@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa941a61-0874-4491-8dd8-b73df17191be" name="Default Changelist" comment="v.0.0.0.5">
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" afterDir="false" />
-    </list>
+    <list default="true" id="aa941a61-0874-4491-8dd8-b73df17191be" name="Default Changelist" comment="v.0.0.0.5" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -233,13 +231,7 @@
       <workItem from="1609764381561" duration="107000" />
       <workItem from="1610351014885" duration="383000" />
       <workItem from="1610351438343" duration="13623000" />
-    </task>
-    <task id="LOCAL-00083" summary="v.0.0.0.5">
-      <created>1608551265044</created>
-      <option name="number" value="00083" />
-      <option name="presentableId" value="LOCAL-00083" />
-      <option name="project" value="LOCAL" />
-      <updated>1608551265044</updated>
+      <workItem from="1610387661265" duration="464000" />
     </task>
     <task id="LOCAL-00084" summary="v.0.0.0.5">
       <created>1608551319844</created>
@@ -577,7 +569,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610369817710</updated>
     </task>
-    <option name="localTasksCounter" value="132" />
+    <task id="LOCAL-00132" summary="v.0.0.0.5">
+      <created>1610387813253</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1610387813254</updated>
+    </task>
+    <option name="localTasksCounter" value="133" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
