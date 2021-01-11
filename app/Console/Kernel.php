@@ -27,9 +27,18 @@ class Kernel extends ConsoleKernel
     {
         $currentDomain = app()->domain();
         //$schedule->command('getdata:dltocloud --domain=doorlock52.ru')->withoutOverlapping();
-        $schedule->command('dlcloud:sendFormEmail --domain='.$currentDomain)->withoutOverlapping();
-        //$schedule->command('scout:flush "App\Models\Shop\ProductList" --domain=doorlock52.ru')->withoutOverlapping();
-        //$schedule->command('scout:import "App\Models\Shop\ProductList" --domain=doorlock52.ru')->withoutOverlapping();
+        if ($currentDomain==''){
+            $schedule->command('getdata:dltocloud')->dailyAt('22:05');
+        } elseif ($currentDomain=='doorlock52.ru'){
+            $schedule->command('getdata:dltocloud')->dailyAt('22:8');
+        }elseif ($currentDomain=='doorlock66.ru'){
+            $schedule->command('getdata:dltocloud')->dailyAt('22:11');
+        }elseif ($currentDomain=='doorlock42.ru'){
+            $schedule->command('getdata:dltocloud')->dailyAt('22:14');
+        }else {}
+        $schedule->command('dlcloud:sendFormEmail')->withoutOverlapping();
+        $schedule->command('scout:flush "App\Models\Shop\ProductList"')->withoutOverlapping();
+        $schedule->command('scout:import "App\Models\Shop\ProductList"')->withoutOverlapping();
     }
     /**
      * Register the commands for the application.
