@@ -234,13 +234,7 @@
       <workItem from="1610351014885" duration="383000" />
       <workItem from="1610351438343" duration="13623000" />
       <workItem from="1610387661265" duration="5060000" />
-    </task>
-    <task id="LOCAL-00100" summary="v.0.0.0.5">
-      <created>1610356611739</created>
-      <option name="number" value="00100" />
-      <option name="presentableId" value="LOCAL-00100" />
-      <option name="project" value="LOCAL" />
-      <updated>1610356611739</updated>
+      <workItem from="1610435507917" duration="5101000" />
     </task>
     <task id="LOCAL-00101" summary="v.0.0.0.5">
       <created>1610356808083</created>
@@ -578,7 +572,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610392400333</updated>
     </task>
-    <option name="localTasksCounter" value="149" />
+    <task id="LOCAL-00149" summary="12.01.2021">
+      <created>1610435644834</created>
+      <option name="number" value="00149" />
+      <option name="presentableId" value="LOCAL-00149" />
+      <option name="project" value="LOCAL" />
+      <updated>1610435644835</updated>
+    </task>
+    <option name="localTasksCounter" value="150" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -605,7 +606,8 @@
     <MESSAGE value="v.0.0.0.3" />
     <MESSAGE value="v.0.0.0.4" />
     <MESSAGE value="v.0.0.0.5" />
-    <option name="LAST_COMMIT_MESSAGE" value="v.0.0.0.5" />
+    <MESSAGE value="12.01.2021" />
+    <option name="LAST_COMMIT_MESSAGE" value="12.01.2021" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
