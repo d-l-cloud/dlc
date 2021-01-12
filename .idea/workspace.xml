@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aa941a61-0874-4491-8dd8-b73df17191be" name="Default Changelist" comment="v.0.0.0.5">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="aa941a61-0874-4491-8dd8-b73df17191be" name="Default Changelist" comment="v.0.0.0.5" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -234,14 +232,7 @@
       <workItem from="1610351014885" duration="383000" />
       <workItem from="1610351438343" duration="13623000" />
       <workItem from="1610387661265" duration="5060000" />
-      <workItem from="1610435507917" duration="5101000" />
-    </task>
-    <task id="LOCAL-00101" summary="v.0.0.0.5">
-      <created>1610356808083</created>
-      <option name="number" value="00101" />
-      <option name="presentableId" value="LOCAL-00101" />
-      <option name="project" value="LOCAL" />
-      <updated>1610356808083</updated>
+      <workItem from="1610435507917" duration="5658000" />
     </task>
     <task id="LOCAL-00102" summary="v.0.0.0.5">
       <created>1610357875193</created>
@@ -579,7 +570,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610435644835</updated>
     </task>
-    <option name="localTasksCounter" value="150" />
+    <task id="LOCAL-00150" summary="v.0.0.0.5">
+      <created>1610444910740</created>
+      <option name="number" value="00150" />
+      <option name="presentableId" value="LOCAL-00150" />
+      <option name="project" value="LOCAL" />
+      <updated>1610444910740</updated>
+    </task>
+    <option name="localTasksCounter" value="151" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -605,9 +603,9 @@
     <MESSAGE value="v.0.0.0.2" />
     <MESSAGE value="v.0.0.0.3" />
     <MESSAGE value="v.0.0.0.4" />
-    <MESSAGE value="v.0.0.0.5" />
     <MESSAGE value="12.01.2021" />
-    <option name="LAST_COMMIT_MESSAGE" value="12.01.2021" />
+    <MESSAGE value="v.0.0.0.5" />
+    <option name="LAST_COMMIT_MESSAGE" value="v.0.0.0.5" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
