@@ -99,10 +99,10 @@
                                                                 @if($categoriesTop->count())
                                                                     <optgroup label="Верхнее меню">
                                                                         @foreach($categoriesTop as $categoryTop)
-                                                                            <option @if(collect(old('menu_id'))->contains($categoryTop->id) || $categoryTop->id == $staticPage->menu_id) selected @endif value="{{ $categoryTop->id }}" >{{ $categoryTop->name }}</option>
+                                                                            <option @if(collect(old('menu_id'))->contains($categoryTop->id) || $categoryTop->id == $staticPage->menu_id) selected @endif value="{{ $categoryTop->id }}" {{in_array($categoryTop->id, $getAllStaticPageMenuIdArray) ? 'disabled':''}}>{{ $categoryTop->name }} {{$categoryTop->id}} {{$staticPage->menu_id}}</option>
                                                                             @if($categoryTop->sub->count())
                                                                                 @foreach($categoryTop->sub as $categoryTopSub)
-                                                                                    <option @if(collect(old('menu_id'))->contains($categoryTopSub->id) || in_array($categoryTopSub->id, $getAllStaticPageMenuIdArray)) selected @endif value="{{ $categoryTopSub->id }}" {{in_array($categoryTopSub->id, $getAllStaticPageMenuIdArray) ? 'disabled':''}}>- {{ $categoryTopSub->name }}</option>
+                                                                                    <option @if(collect(old('menu_id'))->contains($categoryTopSub->id) || in_array($categoryTopSub->id, $getAllStaticPageMenuIdArray)) selected @endif value="{{ $categoryTopSub->id }}">- {{ $categoryTopSub->name }}</option>
                                                                                 @endforeach
                                                                             @endif
                                                                         @endforeach
