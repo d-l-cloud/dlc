@@ -212,6 +212,7 @@
             path_absolute : "/",
             selector: 'textarea.fulltext',
             relative_urls: false,
+            extended_valid_elements: 'script[language|type|src]',
             plugins: [
                 "advlist autolink lists link image charmap print preview hr anchor pagebreak",
                 "searchreplace wordcount visualblocks visualchars code fullscreen",
