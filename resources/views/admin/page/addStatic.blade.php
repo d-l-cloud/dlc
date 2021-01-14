@@ -94,12 +94,12 @@
                                                         <div class="form-group">
                                                             <label>Привязать страницу к меню</label>
 
-                                                            <select multiple size="7" name="menu_id[]" id="pageMenuId" class="form-control">
+                                                            <select multiple size="7" name="menu_id[]" id="pageMenuId" class="form-control" data-validation-required-message="{{ __('This field is required') }}" required>
                                                                 <option value="1">Не привязывать к меню</option>
                                                                 @if($categoriesTop->count())
                                                                     <optgroup label="Верхнее меню">
                                                                         @foreach($categoriesTop as $categoryTop)
-                                                                            <option @if(collect(old('menu_id'))->contains($categoryTop->id) || $categoryTop->id == $staticPage->menu_id) selected @endif value="{{ $categoryTop->id }}" {{in_array($categoryTop->id, $getAllStaticPageMenuIdArray) ? 'disabled':''}}>{{ $categoryTop->name }}</option>
+                                                                            <option @if(collect(old('menu_id'))->contains($categoryTop->id) || $categoryTop->id == $staticPage->menu_id) selected @endif value="{{ $categoryTop->id }}" >{{ $categoryTop->name }}</option>
                                                                             @if($categoryTop->sub->count())
                                                                                 @foreach($categoryTop->sub as $categoryTopSub)
                                                                                     <option @if(collect(old('menu_id'))->contains($categoryTopSub->id) || in_array($categoryTopSub->id, $getAllStaticPageMenuIdArray)) selected @endif value="{{ $categoryTopSub->id }}" {{in_array($categoryTopSub->id, $getAllStaticPageMenuIdArray) ? 'disabled':''}}>- {{ $categoryTopSub->name }}</option>
