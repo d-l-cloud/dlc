@@ -94,7 +94,7 @@
                                                         <div class="form-group">
                                                             <label>Привязать страницу к меню</label>
 
-                                                            <select multiple size="7" name="menu_id[]" id="pageMenuId" class="form-control" data-validation-required-message="{{ __('This field is required') }}">
+                                                            <select multiple size="7" name="menu_id[]" id="pageMenuId" class="form-control">
                                                                 <option value="1">Не привязывать к меню</option>
                                                                 @if($categoriesTop->count())
                                                                     <optgroup label="Верхнее меню">
