@@ -121,7 +121,6 @@ class AdminStaticPage extends Controller
             $getThisStaticPageMenuIdArray[]=null;
         }
 
-        print_r($getThisStaticPageMenuIdArray);
 
         $categoriesTop = SiteMenu::getCategories('top');
         $categoriesBottom = SiteMenu::getCategories('bottom');

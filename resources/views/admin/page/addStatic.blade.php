@@ -6,10 +6,10 @@
 @endif
 
 @section('content')
-<style>
-    option:disabled {
-        text-decoration: line-through;
-    }
+    <style>
+        option:disabled {
+            text-decoration: line-through;
+        }
     </style>
     <div class="content-wrapper">
         <div class="content-header row">
