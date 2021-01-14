@@ -48,11 +48,13 @@ class AdminStaticPage extends Controller
         }else{
             $getAllStaticPageMenuIdArray[]=null;
         }
+        $getThisStaticPageMenuIdArray[]=null;
         $categoriesTop = SiteMenu::getCategories('top');
         $categoriesBottom = SiteMenu::getCategories('bottom');
 
         return view('admin.page.addStatic')
             ->withgetAllStaticPageMenuIdArray($getAllStaticPageMenuIdArray)
+            ->withgetThisStaticPageMenuIdArray($getThisStaticPageMenuIdArray)
             ->withcategoriesTop($categoriesTop)
             ->withcategoriesBottom($categoriesBottom)
             ->with('staticPage', new StaticPage());
@@ -109,6 +111,18 @@ class AdminStaticPage extends Controller
         }else{
             $getAllStaticPageMenuIdArray[]=null;
         }
+
+        $getThisStaticPageMenuId = SiteStaticPagesMenu::where('pagesId','=',$id)->get();
+        if ($getThisStaticPageMenuId->count()!=0) {
+            foreach ($getThisStaticPageMenuId as $getThisStaticPageMenuId) {
+                $getThisStaticPageMenuIdArray[]=$getThisStaticPageMenuId->menuId;
+            }
+        }else{
+            $getThisStaticPageMenuIdArray[]=null;
+        }
+
+        print_r($getThisStaticPageMenuIdArray);
+
         $categoriesTop = SiteMenu::getCategories('top');
         $categoriesBottom = SiteMenu::getCategories('bottom');
 
@@ -118,6 +132,7 @@ class AdminStaticPage extends Controller
         }
         return view('admin.page.addStatic')
             ->withgetAllStaticPageMenuIdArray($getAllStaticPageMenuIdArray)
+            ->withgetThisStaticPageMenuIdArray($getThisStaticPageMenuIdArray)
             ->withcategoriesTop($categoriesTop)
             ->withcategoriesBottom($categoriesBottom)
             ->with('staticPage', $staticPage);

@@ -99,7 +99,7 @@
                                                                 @if($categoriesTop->count())
                                                                     <optgroup label="Верхнее меню">
                                                                         @foreach($categoriesTop as $categoryTop)
-                                                                            <option @if(collect(old('menu_id'))->contains($categoryTop->id) || $categoryTop->id == $staticPage->menu_id) selected @endif value="{{ $categoryTop->id }}" {{in_array($categoryTop->id, $getAllStaticPageMenuIdArray) ? 'disabled':''}}>{{ $categoryTop->name }} {{$categoryTop->id}} {{$staticPage->menu_id}}</option>
+                                                                            <option @if(collect(old('menu_id'))->contains($categoryTop->id) || in_array($categoryTop->id, $getThisStaticPageMenuIdArray)) selected @endif value="{{ $categoryTop->id }}" @if(!in_array($categoryTop->id, $getThisStaticPageMenuIdArray)) {{in_array($categoryTop->id, $getAllStaticPageMenuIdArray) ? 'disabled':''}}@endif>{{ $categoryTop->name }}</option>
                                                                             @if($categoryTop->sub->count())
                                                                                 @foreach($categoryTop->sub as $categoryTopSub)
                                                                                     <option @if(collect(old('menu_id'))->contains($categoryTopSub->id) || in_array($categoryTopSub->id, $getAllStaticPageMenuIdArray)) selected @endif value="{{ $categoryTopSub->id }}">- {{ $categoryTopSub->name }}</option>
@@ -111,7 +111,7 @@
                                                                 @if($categoriesBottom->count())
                                                                     <optgroup label="Нижнее меню">
                                                                         @foreach($categoriesBottom as $categoryBottom)
-                                                                            <option @if(collect(old('menu_id'))->contains($categoryBottom->id) || $categoryBottom->id == $staticPage->menu_id) selected @endif value="{{ $categoryBottom->id }}" {{in_array($categoryBottom->id, $getAllStaticPageMenuIdArray) ? 'disabled':''}}>{{ $categoryBottom->name }} </option>
+                                                                            <option @if(collect(old('menu_id'))->contains($categoryBottom->id) || in_array($categoryBottom->id, $getThisStaticPageMenuIdArray)) selected @endif value="{{ $categoryBottom->id }}" @if(!in_array($categoryBottom->id, $getThisStaticPageMenuIdArray)) {{in_array($categoryBottom->id, $getAllStaticPageMenuIdArray) ? 'disabled':''}}@endif>{{ $categoryBottom->name }} </option>
                                                                             @if($categoryBottom->sub->count())
                                                                                 @foreach($categoryBottom->sub as $categoryBottomSub)
                                                                                     <option @if(collect(old('menu_id'))->contains($categoryBottomSub->id) || $categoryBottomSub->id == $staticPage->menu_id) selected @endif value="{{ $categoryBottomSub->id }}" {{in_array($categoryBottomSub->id, $getAllStaticPageMenuIdArray) ? 'disabled':''}}>- {{ $categoryBottomSub->name }}</option>
