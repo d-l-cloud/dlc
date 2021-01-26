@@ -111,10 +111,9 @@
                                                             <div id="text{{$item->id}}"></div>
                                                         </div>
                                                     @else
-                                                        <div class="btn-group" role="group" aria-label="First Group">
+                                                        <!--<div class="btn-group" role="group" aria-label="First Group">
                                                             <a href="{{ route('admin.product-manufacturer.edit', $item) }}" class="btn btn-icon btn-success text-white" title="Редактировать"><i class="la la-edit"></i></a>
-
-                                                        </div>
+                                                        </div>-->
                                                     @endif
                                                 </td>
                                             </tr>
