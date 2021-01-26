@@ -87,6 +87,9 @@
     @if ($_SERVER['SERVER_NAME']=='doorlock40.ru')
         <meta name="yandex-verification" content="cd1c5ed20db13b9c" />
     @endif
+    @if ($_SERVER['SERVER_NAME']=='doorlock63.ru')
+        <meta name="yandex-verification" content="3410724202f39053" />
+    @endif
 </head>
 <body>
 <div class="main-wrap">
