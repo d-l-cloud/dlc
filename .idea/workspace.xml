@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="aa941a61-0874-4491-8dd8-b73df17191be" name="Default Changelist" comment="v.0.0.0.5">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +22,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -183,6 +189,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
@@ -199,7 +206,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.zend.framework.tool" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -238,14 +245,27 @@
       <workItem from="1610387661265" duration="5060000" />
       <workItem from="1610435507917" duration="7583000" />
       <workItem from="1610636161533" duration="4221000" />
-      <workItem from="1611647123128" duration="630000" />
-    </task>
-    <task id="LOCAL-00114" summary="v.0.0.0.5">
-      <created>1610367247395</created>
-      <option name="number" value="00114" />
-      <option name="presentableId" value="LOCAL-00114" />
-      <option name="project" value="LOCAL" />
-      <updated>1610367247395</updated>
+      <workItem from="1611647123128" duration="3001000" />
+      <workItem from="1611904051405" duration="54000" />
+      <workItem from="1611904370884" duration="1000" />
+      <workItem from="1612783576435" duration="10119000" />
+      <workItem from="1612854857627" duration="10817000" />
+      <workItem from="1612876760237" duration="12000" />
+      <workItem from="1612940447142" duration="4088000" />
+      <workItem from="1613044612925" duration="3108000" />
+      <workItem from="1613052949346" duration="4664000" />
+      <workItem from="1613128197971" duration="20392000" />
+      <workItem from="1613217059874" duration="5673000" />
+      <workItem from="1613226104689" duration="1429000" />
+      <workItem from="1613369570528" duration="6076000" />
+      <workItem from="1613452499284" duration="820000" />
+      <workItem from="1613562017483" duration="3923000" />
+      <workItem from="1613632188942" duration="4227000" />
+      <workItem from="1614000870211" duration="288000" />
+      <workItem from="1614259407400" duration="3400000" />
+      <workItem from="1614324849249" duration="3297000" />
+      <workItem from="1614335866266" duration="2989000" />
+      <workItem from="1614580004067" duration="20827000" />
     </task>
     <task id="LOCAL-00115" summary="v.0.0.0.5">
       <created>1610368451037</created>
@@ -583,7 +603,14 @@
       <option name="project" value="LOCAL" />
       <updated>1611647269863</updated>
     </task>
-    <option name="localTasksCounter" value="163" />
+    <task id="LOCAL-00163" summary="v.0.0.0.5">
+      <created>1611647820985</created>
+      <option name="number" value="00163" />
+      <option name="presentableId" value="LOCAL-00163" />
+      <option name="project" value="LOCAL" />
+      <updated>1611647820986</updated>
+    </task>
+    <option name="localTasksCounter" value="164" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
