@@ -11,7 +11,7 @@
     <title>Отправка запроса с сайта - @yield('title'){{ config('app.name', 'Laravel') }} {!! Helper::siteSettings('city','1') !!}</title>
 </head>
 <body>
-<form class="m-5" method="post" action="{{route('validateSiteForm')}}">
+<form class="m-5" method="post" action="{{route('validateSiteForm')}}" onsubmit="yaCounter73141390.reachGoal ('svyaz')">
     @csrf
     @if(session('status'))
         <div class="alert alert-success">
@@ -91,7 +91,7 @@
             <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
             @enderror
         </div>
-    <button type="submit" class="btn btn-primary" onclick="ym(73141390, 'reachGoal', 'svyaz'); return true;">Отправить</button>
+    <button type="submit" class="btn btn-primary">Отправить</button>
     @endif
 </form>
 
