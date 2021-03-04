@@ -11,7 +11,12 @@
     <title>Отправка запроса с сайта - @yield('title'){{ config('app.name', 'Laravel') }} {!! Helper::siteSettings('city','1') !!}</title>
 </head>
 <body>
-<form class="m-5" method="post" action="{{route('validateSiteForm')}}" onsubmit="yaCounter73141390.reachGoal ('svyaz')">
+@if ($_SERVER['SERVER_NAME']=='doorlock52.ru')
+    <form class="m-5" method="post" action="{{route('validateSiteForm')}}" onsubmit="yaCounter73141390.reachGoal ('svyaz')">
+@endif
+@if ($_SERVER['SERVER_NAME']!='doorlock52.ru')
+            <form class="m-5" method="post" action="{{route('validateSiteForm')}}">
+ @endif
     @csrf
     @if(session('status'))
         <div class="alert alert-success">
