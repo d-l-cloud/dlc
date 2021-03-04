@@ -91,7 +91,7 @@
             <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
             @enderror
         </div>
-    <button type="submit" class="btn btn-primary">Отправить</button>
+    <button type="submit" class="btn btn-primary" onclick="ym(73141390, 'reachGoal', 'svyaz'); return true;">Отправить</button>
     @endif
 </form>
 
